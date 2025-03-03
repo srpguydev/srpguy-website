@@ -33,19 +33,6 @@ nav ul li {
   margin: 0 1em;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-nav ul li a:hover {
-  background: #6a0080;
-}
-
 main {
   padding: 2em;
 }
@@ -66,36 +53,21 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-blockquote {
-  font-size: 1.1rem;
-  margin: 0.5em 0;
-  padding: 1em;
-  background: rgba(255, 255, 255, 0.1);
-  border-left: 5px solid #bb86fc;
-}
-
-.paypal-button {
+/* Button and Hyperlink Styling */
+button, .paypal-button, a {
   display: inline-block;
-  background: #6a0080;
+  background: #6a0080; /* Default dark purple background */
   color: white;
   text-decoration: none;
   padding: 0.8em 1.5em;
   border-radius: 5px;
-  font-size: 1.2rem;
-  margin-top: 1em;
-  transition: background 0.3s ease;
+  font-size: 1.1rem;
+  position: relative;
+  overflow: hidden; /* Ensures animation stays within bounds */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effects */
 }
 
-.paypal-button:hover {
-  background: #bb86fc;
-}
-
-/* Hover effect with animated circular light */
-button:hover, .paypal-button:hover, a:hover {
-  background: #6a0080; /* Maintain background color */
-  color: #ffffff; /* Keep text color */
-}
-
+/* Add smooth dark blue light animation */
 button::before, .paypal-button::before, a::before {
   content: '';
   position: absolute;
@@ -103,16 +75,28 @@ button::before, .paypal-button::before, a::before {
   left: 50%;
   width: 0;
   height: 0;
-  background: radial-gradient(circle, rgba(0, 0, 255, 0.6), transparent 70%); /* Dark blue radial light */
+  background: radial-gradient(circle, rgba(0, 0, 255, 0.6), transparent 70%); /* Blue glow */
   border-radius: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
 }
 
-/* On hover, expand the light effect */
 button:hover::before, .paypal-button:hover::before, a:hover::before {
-  width: 300%; /* Make the light big enough to "circle" the button */
+  width: 300%; /* Expands the light to circle around */
   height: 300%;
-  opacity: 1; /* Make it visible */
+  opacity: 1;
 }
+
+button:hover, .paypal-button:hover, a:hover {
+  background: #6a0080; /* Keeps button background consistent */
+  color: #ffffff; /* Keeps text color legible */
+}
+
+/* Focus State for Accessibility */
+button:focus, .paypal-button:focus, a:focus {
+  outline: none;
+  transform: scale(1.05); /* Subtle scaling on focus */
+  box-shadow: 0 0 10px #bb86fc; /* Add a glowing border */
+}
+
