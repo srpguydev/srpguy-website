@@ -21,18 +21,34 @@
     <section class="testimonials">
       <h2>Testimonials</h2>
       <blockquote>
-        ⭐⭐⭐⭐⭐ "Absolutely worth it! Easy and quick." – Kien N.
+        ⭐⭐⭐⭐⭐ "easy and quick." – Kien N.
       </blockquote>
       <blockquote>
-        ⭐⭐⭐⭐ "Great service, no hassle. Highly recommend!" – Liam G.
+        ⭐⭐⭐⭐ "Great service, no hassle, highly recommend" – Liam G.
       </blockquote>
       <blockquote>
-        ⭐⭐⭐⭐⭐ "Fast and reliable. Will use again!" – Nathan D.
+        ⭐⭐⭐⭐⭐ "Fast and reliable. Will use again" – Thomas V.
       </blockquote>
     </section>
   </main>
   <footer>
     <p>&copy; 2025 SRPGuy. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Add gradient hover effect to buttons and hyperlinks
+    document.querySelectorAll('button, .paypal-button, a').forEach(element => {
+      element.addEventListener('mousemove', (event) => {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        element.style.background = `radial-gradient(circle at ${x}px ${y}px, #0000ff, #87ceeb)`;
+      });
+      element.addEventListener('mouseleave', () => {
+        element.style.background = ''; // Reset on mouse leave
+      });
+    });
+  </script>
 </body>
 </html>
+
