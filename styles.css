@@ -115,3 +115,43 @@ button:focus, .paypal-button:focus, a:focus {
   transform: scale(1.1); /* Same effect as hover for consistency */
   box-shadow: 0 0 10px #bb86fc; /* Add a glowing focus effect */
 }
+/* General styling for buttons and hyperlinks */
+button, .paypal-button, a {
+  display: inline-block;
+  background: #6a0080; /* Default dark purple background */
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  position: relative;
+  overflow: hidden; /* Ensures the light animation stays within the button bounds */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for background */
+}
+
+/* Hover effect with animated circular light */
+button:hover, .paypal-button:hover, a:hover {
+  background: #6a0080; /* Maintain background color */
+  color: #ffffff; /* Keep text color */
+}
+
+button::before, .paypal-button::before, a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(0, 0, 255, 0.6), transparent 70%); /* Dark blue radial light */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+}
+
+/* On hover, expand the light effect */
+button:hover::before, .paypal-button:hover::before, a:hover::before {
+  width: 300%; /* Make the light big enough to "circle" the button */
+  height: 300%;
+  opacity: 1; /* Make it visible */
+}
