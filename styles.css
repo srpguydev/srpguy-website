@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #f9f9f9;
+  background: linear-gradient(135deg, #2a004d, #6a0080);
+}
+
+header {
+  background: rgba(58, 0, 95, 0.9);
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: rgba(74, 0, 110, 0.9);
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #6a0080;
+}
+
+main {
+  padding: 2em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: rgba(58, 0, 95, 0.9);
+  color: white;
+  font-size: 0.9rem;
+}
+
+section {
+  margin-bottom: 2em;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+  font-size: 1.1rem;
+  margin: 0.5em 0;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 5px solid #bb86fc;
+}
+
+.paypal-button {
+  display: inline-block;
+  background: #6a0080;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 1em;
+  transition: background 0.3s ease;
+}
+
+.paypal-button:hover {
+  background: #bb86fc;
+}
+/* Styling for all buttons and hyperlinks */
+button, .paypal-button, a {
+  display: inline-block;
+  background: #6a0080; /* Default dark purple background */
+  color: white;
+  text-decoration: none; /* Remove underline for links */
+  padding: 0.8em 1.5em;
+  border-radius: 5px; /* Rounded corners for buttons */
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Hover animation for buttons and links */
+button:hover, .paypal-button:hover, a:hover {
+  transform: scale(1.1); /* Slightly enlarge the element */
+  background: linear-gradient(135deg, #9a64d3, #bb86fc); /* Add a gradient effect */
+  color: #ffffff; /* Keep text white for contrast */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow for a floating effect */
+}
+
+/* Focus animation for accessibility */
+button:focus, .paypal-button:focus, a:focus {
+  outline: none;
+  transform: scale(1.1); /* Same effect as hover for consistency */
+  box-shadow: 0 0 10px #bb86fc; /* Add a glowing focus effect */
+}
