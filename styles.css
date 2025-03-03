@@ -5,11 +5,11 @@ body {
   margin: 0;
   padding: 0;
   color: #f9f9f9;
-  background: linear-gradient(135deg, #2a004d, #6a0080);
+  background: linear-gradient(135deg, #2a004d, #6a0080); /* Background gradient */
 }
 
 header {
-  background: rgba(58, 0, 95, 0.9);
+  background: rgba(58, 0, 95, 0.9); /* Dark purple header */
   color: white;
   padding: 1.5em 0;
   text-align: center;
@@ -33,6 +33,19 @@ nav ul li {
   margin: 0 1em;
 }
 
+/* Styling for all hyperlinks and navigation links */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Section Styling */
 main {
   padding: 2em;
 }
@@ -53,7 +66,15 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Button and Hyperlink Styling */
+blockquote {
+  font-size: 1.1rem;
+  margin: 0.5em 0;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 5px solid #bb86fc;
+}
+
+/* Hover Light Effect for All Buttons and Hyperlinks */
 button, .paypal-button, a {
   display: inline-block;
   background: #6a0080; /* Default dark purple background */
@@ -62,12 +83,11 @@ button, .paypal-button, a {
   padding: 0.8em 1.5em;
   border-radius: 5px;
   font-size: 1.1rem;
-  position: relative;
+  position: relative; /* Needed for ::before pseudo-element */
   overflow: hidden; /* Ensures animation stays within bounds */
   transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effects */
 }
 
-/* Add smooth dark blue light animation */
 button::before, .paypal-button::before, a::before {
   content: '';
   position: absolute;
@@ -75,28 +95,27 @@ button::before, .paypal-button::before, a::before {
   left: 50%;
   width: 0;
   height: 0;
-  background: radial-gradient(circle, rgba(0, 0, 255, 0.6), transparent 70%); /* Blue glow */
-  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 0, 255, 0.5), transparent 70%); /* Blue radial light */
+  border-radius: 50%; /* Ensures the light is circular */
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+  transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease; /* Smooth animation */
 }
 
 button:hover::before, .paypal-button:hover::before, a:hover::before {
   width: 300%; /* Expands the light to circle around */
   height: 300%;
-  opacity: 1;
+  opacity: 1; /* Make it visible */
 }
 
 button:hover, .paypal-button:hover, a:hover {
-  background: #6a0080; /* Keeps button background consistent */
-  color: #ffffff; /* Keeps text color legible */
+  background: #6a0080; /* Keep purple background */
+  color: #ffffff; /* Maintain text color */
 }
 
 /* Focus State for Accessibility */
 button:focus, .paypal-button:focus, a:focus {
   outline: none;
-  transform: scale(1.05); /* Subtle scaling on focus */
-  box-shadow: 0 0 10px #bb86fc; /* Add a glowing border */
+  transform: scale(1.05); /* Slightly enlarges for focus */
+  box-shadow: 0 0 10px #bb86fc; /* Adds glowing effect */
 }
-
