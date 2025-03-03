@@ -23,13 +23,13 @@
       <div class="reviews">
         <h3>What Buyers Are Saying:</h3>
         <blockquote>
-          ⭐⭐⭐⭐⭐ "this fr works not even joking was sceptical at first but it works!" – Thomas V.
+          ⭐⭐⭐⭐⭐ "fast, cheap and reliable" – Joel S.
         </blockquote>
         <blockquote>
-          ⭐⭐⭐⭐ "Simple to use and worth every penny." – Ervinas V.
+          ⭐⭐⭐⭐ "Simple to use and worth every penny." – Nathan D.
         </blockquote>
         <blockquote>
-          ⭐⭐⭐⭐⭐ "cheaper than a mcds big mac meal!." – Harry R.
+          ⭐⭐⭐⭐⭐ "Amazing service everything worked perfectly." – Harry R.
         </blockquote>
       </div>
       <div class="paypal-link">
@@ -51,5 +51,20 @@
   <footer>
     <p>&copy; 2025 SRPGuy. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Add gradient hover effect to buttons and hyperlinks
+    document.querySelectorAll('button, .paypal-button, a').forEach(element => {
+      element.addEventListener('mousemove', (event) => {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        element.style.background = `radial-gradient(circle at ${x}px ${y}px, #0000ff, #87ceeb)`;
+      });
+      element.addEventListener('mouseleave', () => {
+        element.style.background = ''; // Reset on mouse leave
+      });
+    });
+  </script>
 </body>
 </html>
