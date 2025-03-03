@@ -9,36 +9,33 @@ Welcome to the SRPGuy website repository! This project is a fun, sleek, and full
 - **Seneca Bot**: Get instant answers and "revise" effortlessly.
 - **No Effort, No Stress**: Focus on what matters while SRPGuy handles the tedious work.
 - **Banter & Breaks**: Relax, have a laugh, and enjoy life.
+---
 
-### Pages Included:
-1. **Home Page**:
-   - Outlines SRPGuy’s services in a clean and engaging way.
-2. **Testimonials Page**:
-   - Showcases glowing 4- and 5-star reviews from satisfied users.
-3. **Contact & Purchase Page**:
-   - Includes a purchase section with a PayPal link and arrows directing users to buy.
-   - Contact section for users to reach out via email.
+## ✨ Testimonials
+Here’s what people are saying:
+- ⭐⭐⭐⭐⭐ "Absolutely worth it! Easy and quick." – Alex P.
+- ⭐⭐⭐⭐ "Great service, no hassle. Highly recommend!" – Jamie L.
+- ⭐⭐⭐⭐⭐ "Fast and reliable. Will use again!" – Taylor C.
 
 ---
 
-## 🎨 Design Highlights
-- **Dark Purple Gradient**: A visually stunning and cohesive theme applied across the entire site.
-- **Responsive Design**: Looks great on any device, from desktops to mobile phones.
-- **User-Friendly Navigation**: Easy to move between pages with a clean navigation bar.
+## 💸 Purchase
+Want to get started? You can purchase SRPGuy for only £6!
+
+- **PayPal Link**: [Purchase Here](https://paypal.me/ErvinasVilcinskas)
+- 💡 *Make sure to add your Discord username in the payment notes!*
 
 ---
 
-## 🚀 Getting Started
-### Steps to Host on GitHub Pages:
-1. **Clone or Download** the repository to your computer.
-2. **Push to GitHub**:
-   - Create a new repository on GitHub.
-   - Upload the files (`index.html`, `testimonials.html`, `contact.html`, and `styles.css`) into your repository.
-3. **Enable GitHub Pages**:
-   - Go to your repository settings.
-   - Under **GitHub Pages**, set the source to `main` (or the branch where you uploaded the files).
-   - Your website will be live at `https://<your-username>.github.io/<repository-name>/`.
+## 📞 Contact
+If you need support or have any questions, feel free to reach out:
+- **Email**: [spqrshakalas@gmail.com](mailto:spqrshakalas@gmail.com)
 
 ---
 
-## 📂 Folder Structure
+## 📋 License
+This project is open for personal use and modification. Please give credit to SRPGuy when sharing or using publicly.
+
+---
+
+Enjoy your journey to effortless homework with SRPGuy! 🚀
