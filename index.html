@@ -34,5 +34,20 @@
   <footer>
     <p>&copy; 2025 SRPGuy. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Add gradient hover effect to buttons and hyperlinks
+    document.querySelectorAll('button, .paypal-button, a').forEach(element => {
+      element.addEventListener('mousemove', (event) => {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left; // Mouse X position within button
+        const y = event.clientY - rect.top;  // Mouse Y position within button
+        element.style.background = `radial-gradient(circle at ${x}px ${y}px, #0000ff, #87ceeb)`;
+      });
+      element.addEventListener('mouseleave', () => {
+        element.style.background = ''; // Reset to original background on mouse leave
+      });
+    });
+  </script>
 </body>
 </html>
