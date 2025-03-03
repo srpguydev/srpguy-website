@@ -13,9 +13,9 @@ Welcome to the SRPGuy website repository! This project is a fun, sleek, and full
 
 ## ✨ Testimonials
 Here’s what people are saying:
-- ⭐⭐⭐⭐⭐ "Absolutely worth it! Easy and quick." – Alex P.
-- ⭐⭐⭐⭐ "Great service, no hassle. Highly recommend!" – Jamie L.
-- ⭐⭐⭐⭐⭐ "Fast and reliable. Will use again!" – Taylor C.
+- ⭐⭐⭐⭐⭐ "Absolutely worth it! Easy and quick." – Kien N.
+- ⭐⭐⭐⭐ "Great service, no hassle. Highly recommend!" – Liam G.
+- ⭐⭐⭐⭐⭐ "Fast and reliable. Will use again!" – Thomas V.
 
 ---
 
