@@ -4,13 +4,13 @@ body {
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  color: #f4f4f9;
-  background: linear-gradient(135deg, #005f73, #0a9396); /* Blue-green gradient */
+  color: #f8f9fa; /* Light text */
+  background: linear-gradient(135deg, #3a506b, #5bc0be); /* Blue-teal gradient */
   overflow-x: hidden;
 }
 
 header {
-  background: rgba(0, 95, 115, 0.9);
+  background: rgba(48, 79, 107, 0.9);
   padding: 1.5em 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -19,7 +19,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 3rem;
-  color: #f4f4f9;
+  color: #f8f9fa;
 }
 
 nav ul {
@@ -28,11 +28,11 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  background: #0a9396;
+  background: #1c7c9e;
 }
 
 nav ul li {
-  margin: 0 0.5em;
+  margin: 0 0.7em;
 }
 
 nav ul li a {
@@ -43,29 +43,15 @@ nav ul li a {
   position: relative;
   display: inline-block;
   overflow: hidden;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
 }
 
-nav ul li a span {
-  background: radial-gradient(circle, rgba(0, 0, 255, 0.8), transparent 70%);
-  background-size: 200% 200%;
-  background-position: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Applies gradient within the text */
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-nav ul li a:hover span {
-  animation: glow 1.5s infinite ease-in-out;
-}
-
-@keyframes glow {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 100%;
-  }
+nav ul li a:hover {
+  background: #3da9fc; /* Bright blue hover background */
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 main {
@@ -77,48 +63,25 @@ main {
 footer {
   text-align: center;
   padding: 1em 0;
-  background: #001219;
-  color: #94d2bd;
+  background: #0e3b43; /* Dark complementary green */
+  color: #c2f3e0;
   font-size: 0.9rem;
 }
 
-/* Button Styling */
-button, a.paypal-button {
-  display: inline-block;
-  font-family: 'Roboto', sans-serif;
-  color: #f4f4f9; /* Text color */
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  border: none;
-  background: none; /* No background */
-  position: relative;
-  overflow: hidden;
-  padding: 0.5em 1em;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
+section {
+  margin-bottom: 2em;
+  background: rgba(255, 255, 255, 0.08); /* Subtle glass effect */
+  border-radius: 15px;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button::before, a.paypal-button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background: radial-gradient(circle, rgba(0, 0, 255, 0.6), transparent 60%);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  z-index: -1;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-button:hover, a.paypal-button:hover {
-  color: #87ceeb; /* Light blue for text on hover */
-}
-
-button:hover::before, a.paypal-button:hover::before {
-  transform: translate(-50%, -50%) scale(1.5); /* Expands effect */
-  opacity: 1;
+/* Testimonials Styling */
+blockquote {
+  font-size: 1.2rem;
+  margin: 1em 0;
+  padding: 1em;
+  background: rgba(91, 192, 190, 0.1);
+  border-left: 5px solid #5bc0be; /* Bright teal border */
+  color: #f8f9fa;
 }
