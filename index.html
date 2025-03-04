@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SRPGuy | Effortless Homework Solutions</title>
+  <title>SRPGuy | Homework Made Easy</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>SRPGuy | Effortless Homework Solutions</h1>
+    <h1>SRPGuy | Homework Made Easy</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -20,34 +20,32 @@
 
   <main>
     <section>
-      <h2>Welcome to SRPGuy</h2>
-      <p>Your all-in-one solution for homework help, designed to save you time and reduce stress. From SPARX Autocompleters to Seneca answers, we've got you covered.</p>
+      <h2>About SRPGuy</h2>
+      <p>Welcome to SRPGuy, your ultimate companion for conquering homework like a pro! Whether you're tackling SPARX math problems, revising with Seneca, or just need a hand with tedious tasks, SRPGuy has you covered. We specialize in quick, efficient solutions so you can focus on what matters most. Work smarter, not harder!</p>
     </section>
 
     <section>
-      <h2>What We Offer</h2>
+      <h2>How SRPGuy Helps You</h2>
       <ul>
-        <li><strong>SPARX Autocompleter:</strong> Streamlines your maths homework.</li>
-        <li><strong>Seneca Answers:</strong> Get instant help with study materials.</li>
-        <li><strong>Ease of Use:</strong> Intuitive, fast, and reliable.</li>
+        <li><strong>SPARX Autocompleter:</strong> Effortlessly solve math problems.</li>
+        <li><strong>Seneca Answers:</strong> Quick and accurate study assistance.</li>
+        <li><strong>Time Efficiency:</strong> Save precious time and minimize stress.</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 SRPGuy. Your solution for effortless homework help.</p>
+    <p>&copy; 2025 SRPGuy. Empowering students with smarter solutions.</p>
   </footer>
 
   <script>
-    document.querySelectorAll('a').forEach(element => {
+    document.querySelectorAll('a, button').forEach(element => {
       element.addEventListener('mousemove', (event) => {
         const rect = element.getBoundingClientRect();
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
-        element.style.background = `radial-gradient(circle at ${x}px ${y}px, #0000ff, #87ceeb)`;
-      });
-      element.addEventListener('mouseleave', () => {
-        element.style.background = '';
+        element.style.setProperty('--x', `${x}px`);
+        element.style.setProperty('--y', `${y}px`);
       });
     });
   </script>
