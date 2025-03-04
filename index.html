@@ -37,5 +37,19 @@
   <footer>
     <p>&copy; 2025 SRPGuy. Your solution for effortless homework help.</p>
   </footer>
+
+  <script>
+    document.querySelectorAll('a').forEach(element => {
+      element.addEventListener('mousemove', (event) => {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        element.style.background = `radial-gradient(circle at ${x}px ${y}px, #0000ff, #87ceeb)`;
+      });
+      element.addEventListener('mouseleave', () => {
+        element.style.background = '';
+      });
+    });
+  </script>
 </body>
 </html>
