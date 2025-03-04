@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SRPGuy | Contact Us</title>
+  <title>SRPGuy | Contact & Purchase</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Contact Us</h1>
+    <h1>Contact & Purchase</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,18 +19,58 @@
   </header>
 
   <main>
+    <!-- Contact Section -->
     <section>
-      <h2>We'd Love to Hear from You</h2>
+      <h2>Get in Touch</h2>
       <p>If you have questions, feedback, or need assistance, feel free to reach out:</p>
       <ul>
         <li><strong>Email:</strong> <a href="mailto:spqrshakalas@gmail.com">spqrshakalas@gmail.com</a></li>
-        <li><strong>Discord:</strong> discord.gg/srpguy<li>
+        <li><strong>Discord:</strong> SRPGuy#1234</li>
+        <li><strong>Twitter:</strong> <a href="https://twitter.com/srpguy" target="_blank">@SRPGuy</a></li>
       </ul>
+    </section>
+
+    <!-- Purchase Section -->
+    <section>
+      <h2>Purchase SRPGuy Tools</h2>
+      <p>Unlock the ultimate homework solution today for only <strong>£6</strong>! Get access to the SPARX Autocompleter, Seneca Answer Bot, and much more to make your life easier.</p>
+      <blockquote>
+        ⭐⭐⭐⭐⭐ "Fast and reliable, highly recommend buying!" – Joel S.
+      </blockquote>
+      <blockquote>
+        ⭐⭐⭐⭐⭐ "Great support and tools that save so much time." – Kien N.
+      </blockquote>
+      <blockquote>
+        ⭐⭐⭐⭐ "The SPARX bot is a lifesaver. Will use again!" – Nathan D.
+      </blockquote>
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="https://paypal.me/ErvinasVilcinskas" target="_blank" class="paypal-button">Purchase Now for £6</a>
+        <p class="note" style="margin-top: 10px; font-size: 0.9rem; color: #f4f4f9;">
+          💡 <strong>Note:</strong> Include your Discord username in the payment notes for faster service.
+        </p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 SRPGuy. We're here to help you succeed!</p>
+    <p>&copy; 2025 SRPGuy. Empowering students with smarter solutions.</p>
   </footer>
+
+  <script>
+    // Dynamic glowing effect for text
+    document.querySelectorAll('nav ul li a span').forEach(link => {
+      link.addEventListener('mousemove', (e) => {
+        const rect = link.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        link.style.backgroundPosition = `${x}px ${y}px`;
+      });
+
+      link.addEventListener('mouseleave', () => {
+        link.style.backgroundPosition = 'center'; // Reset the position
+      });
+    });
+  </script>
 </body>
 </html>
