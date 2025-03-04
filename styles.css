@@ -29,8 +29,8 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  background: rgba(10, 147, 150, 0.9);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(10, 147, 150, 0.9); /* Semi-transparent blue-green background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 nav ul li {
@@ -39,17 +39,40 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #f4f4f9;
-  font-size: 1.1rem;
+  color: #f4f4f9; /* Light text color */
+  font-size: 1.2rem;
   padding: 0.8em 1.5em;
-  border-radius: 25px;
-  background: rgba(0, 95, 115, 0.8);
-  transition: all 0.3s ease;
+  border-radius: 25px; /* Rounded button shape */
+  background: rgba(0, 95, 115, 0.8); /* Darker blue-green background */
+  position: relative; /* Enable pseudo-element effects */
+  overflow: hidden; /* Contain animations */
+  transition: all 0.3s ease-in-out; /* Smooth hover transition */
 }
 
 nav ul li a:hover {
-  background: #0a9396;
-  transform: scale(1.1);
+  background: #0a9396; /* Slightly brighter blue-green on hover */
+  color: white; /* High contrast for better readability */
+  transform: scale(1.1); /* Grows slightly for emphasis */
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent 70%); /* Soft radial highlight */
+  border-radius: 50%; /* Circular effect */
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease; /* Smooth expand/fade animation */
+}
+
+nav ul li a:hover::before {
+  width: 300%; /* Expand to cover the link */
+  height: 300%;
+  opacity: 1; /* Make the light visible */
 }
 
 main {
