@@ -1,28 +1,4 @@
-/* General Styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.8;
-  margin: 0;
-  padding: 0;
-  color: #f4f4f9; /* Light text */
-  background: linear-gradient(135deg, #005f73, #0a9396); /* Blue-green gradient */
-  overflow-x: hidden;
-}
-
-header {
-  background: rgba(0, 95, 115, 0.9); /* Semi-transparent header */
-  color: #e9d8a6; /* Warm sandy highlight */
-  padding: 1.5em 0;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 3rem;
-  text-shadow: 2px 2px #001219;
-}
-
+/* Navigation Bar Styling */
 nav ul {
   list-style: none;
   padding: 0;
@@ -34,17 +10,17 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 1em;
+  margin: 0 0.5em; /* Reduced spacing between buttons */
 }
 
 nav ul li a {
   text-decoration: none;
   color: #f4f4f9; /* Light text color */
-  font-size: 1.2rem;
-  padding: 0.8em 1.5em;
-  border-radius: 25px; /* Rounded button shape */
+  font-size: 1rem; /* Reduced font size */
+  padding: 0.5em 1em; /* Smaller padding for compact buttons */
+  border-radius: 15px; /* Subtle rounded corners */
   background: rgba(0, 95, 115, 0.8); /* Darker blue-green background */
-  position: relative; /* Enable pseudo-element effects */
+  position: relative;
   overflow: hidden; /* Contain animations */
   transition: all 0.3s ease-in-out; /* Smooth hover transition */
 }
@@ -52,7 +28,7 @@ nav ul li a {
 nav ul li a:hover {
   background: #0a9396; /* Slightly brighter blue-green on hover */
   color: white; /* High contrast for better readability */
-  transform: scale(1.1); /* Grows slightly for emphasis */
+  transform: scale(1.05); /* Smaller scaling effect for subtle emphasis */
 }
 
 nav ul li a::before {
@@ -70,56 +46,20 @@ nav ul li a::before {
 }
 
 nav ul li a:hover::before {
-  width: 300%; /* Expand to cover the link */
-  height: 300%;
+  width: 200%; /* Reduced size for subtle hover effect */
+  height: 200%;
   opacity: 1; /* Make the light visible */
 }
 
-main {
-  padding: 2em 5%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-footer {
-  text-align: center;
-  padding: 1em 0;
-  background: #001219;
-  color: #94d2bd; /* Soft complementary green */
-  font-size: 0.9rem;
-}
-
-section {
-  margin-bottom: 2em;
-  background: rgba(255, 255, 255, 0.1); /* Subtle glass effect */
-  border-radius: 15px;
-  padding: 2em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-blockquote {
-  font-size: 1.2rem;
-  margin: 0.5em 0;
-  padding: 1em;
-  background: rgba(255, 255, 255, 0.1);
-  border-left: 5px solid #94d2bd;
-  color: #f4f4f9;
-}
-
+/* Buttons on Other Sections */
 button, a.paypal-button {
   display: inline-block;
   background: #001219;
   color: #e9d8a6;
   text-decoration: none;
-  padding: 0.8em 1.5em;
-  border-radius: 25px;
-  font-size: 1.2rem;
+  padding: 0.6em 1em; /* Smaller padding */
+  border-radius: 15px; /* Subtle rounded corners */
+  font-size: 1rem; /* Reduced font size */
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease;
@@ -128,7 +68,7 @@ button, a.paypal-button {
 button:hover, a.paypal-button:hover {
   background: #0a9396;
   color: #ffffff;
-  transform: scale(1.1);
+  transform: scale(1.05); /* Slight scaling effect for hover */
 }
 
 button::before, a.paypal-button::before {
@@ -138,7 +78,7 @@ button::before, a.paypal-button::before {
   left: 50%;
   width: 0;
   height: 0;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 70%); /* Softer light */
   border-radius: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -146,7 +86,7 @@ button::before, a.paypal-button::before {
 }
 
 button:hover::before, a.paypal-button:hover::before {
-  width: 300%;
-  height: 300%;
+  width: 200%;
+  height: 200%;
   opacity: 1;
 }
