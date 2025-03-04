@@ -1,11 +1,11 @@
-/* General styling */
+/* General Styling */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  color: #f4f4f9; /* Light text */
-  background: linear-gradient(135deg, #005f73, #0a9396);
+  color: #f4f4f9;
+  background: linear-gradient(135deg, #005f73, #0a9396); /* Blue-green gradient */
   overflow-x: hidden;
 }
 
@@ -45,13 +45,12 @@ nav ul li a {
   overflow: hidden;
 }
 
-/* Gradient text masking for dynamic glowing effect */
 nav ul li a span {
   background: radial-gradient(circle, rgba(0, 0, 255, 0.8), transparent 70%);
   background-size: 200% 200%;
   background-position: center;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Allows gradient within text */
+  -webkit-text-fill-color: transparent; /* Applies gradient within the text */
   font-weight: bold;
   transition: background 0.3s ease;
 }
@@ -67,4 +66,59 @@ nav ul li a:hover span {
   to {
     background-position: 100% 100%;
   }
+}
+
+main {
+  padding: 2em 5%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #001219;
+  color: #94d2bd;
+  font-size: 0.9rem;
+}
+
+/* Button Styling */
+button, a.paypal-button {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  color: #f4f4f9; /* Text color */
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  background: none; /* No background */
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+button::before, a.paypal-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(0, 0, 255, 0.6), transparent 60%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+button:hover, a.paypal-button:hover {
+  color: #87ceeb; /* Light blue for text on hover */
+}
+
+button:hover::before, a.paypal-button:hover::before {
+  transform: translate(-50%, -50%) scale(1.5); /* Expands effect */
+  opacity: 1;
 }
