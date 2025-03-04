@@ -3,47 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SRPGuy | Homework Made Easy</title>
+  <title>SRPGuy | Simplify Your Homework</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>SRPGuy | Homework Made Easy</h1>
+    <h1>SRPGuy | Simplify Your Homework</h1>
     <nav>
       <ul>
-        <li><a href="index.html"><span>Home</span></a></li>
-        <li><a href="testimonials.html"><span>Testimonials</span></a></li>
-        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section>
-      <h2>About SRPGuy</h2>
-      <p>Welcome to SRPGuy, your ultimate companion for conquering homework like a pro! Whether you're tackling SPARX math problems, revising with Seneca, or just need a hand with tedious tasks, SRPGuy has you covered.</p>
+      <h2>Why Choose SRPGuy?</h2>
+      <p>Are you tired of spending endless hours on repetitive homework tasks? SRPGuy offers tailored solutions to make learning faster and more efficient. Whether it's solving tricky math problems with SPARX or breezing through Seneca revision, we've got your back. Our tools are designed to save you time and let you focus on what matters most!</p>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li><strong>SPARX Autocompleter:</strong> Instantly complete math homework tasks.</li>
+        <li><strong>Seneca Answer Bot:</strong> Accurate, reliable support for learning.</li>
+        <li><strong>Time-Saving:</strong> Minimize effort and maximize results.</li>
+        <li><strong>User-Friendly:</strong> Intuitive interface for all age groups.</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 SRPGuy. Empowering students with smarter solutions.</p>
+    <p>&copy; 2025 SRPGuy | Revolutionizing Homework Solutions</p>
   </footer>
-
-  <script>
-    // Dynamic glowing effect for text
-    document.querySelectorAll('nav ul li a span').forEach(link => {
-      link.addEventListener('mousemove', (e) => {
-        const rect = link.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        link.style.backgroundPosition = `${x}px ${y}px`;
-      });
-
-      link.addEventListener('mouseleave', () => {
-        link.style.backgroundPosition = 'center'; // Reset the position
-      });
-    });
-  </script>
 </body>
 </html>
