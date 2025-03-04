@@ -11,44 +11,39 @@
     <h1>What People Say About SRPGuy</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="testimonials.html"><span>Testimonials</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <section class="testimonials">
+    <section>
       <h2>Testimonials</h2>
-      <blockquote>
-        ⭐⭐⭐⭐⭐ "easy and quick." – Kien N.
-      </blockquote>
-      <blockquote>
-        ⭐⭐⭐⭐ "Great service, no hassle, highly recommend" – Liam G.
-      </blockquote>
-      <blockquote>
-        ⭐⭐⭐⭐⭐ "Fast and reliable. Will use again" – Thomas V.
-      </blockquote>
+      <blockquote>⭐⭐⭐⭐⭐ "Cheaper than a mcdonalds bigmac meal." – Harry R.</blockquote>
+      <blockquote>⭐⭐⭐⭐⭐ "Fast and reliable." – Liam G.</blockquote>
+      <blockquote>⭐⭐⭐⭐⭐ "Amazing service recommend buying" – Dylan G.</blockquote>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 SRPGuy. All rights reserved.</p>
+    <p>&copy; 2025 SRPGuy. Making homework easy for everyone.</p>
   </footer>
 
   <script>
-    // Add gradient hover effect to buttons and hyperlinks
-    document.querySelectorAll('button, .paypal-button, a').forEach(element => {
-      element.addEventListener('mousemove', (event) => {
-        const rect = element.getBoundingClientRect();
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
-        element.style.background = `radial-gradient(circle at ${x}px ${y}px, #0000ff, #87ceeb)`;
+    document.querySelectorAll('nav ul li a span').forEach(link => {
+      link.addEventListener('mousemove', (e) => {
+        const rect = link.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        link.style.backgroundPosition = `${x}px ${y}px`;
       });
-      element.addEventListener('mouseleave', () => {
-        element.style.background = ''; // Reset on mouse leave
+
+      link.addEventListener('mouseleave', () => {
+        link.style.backgroundPosition = 'center';
       });
     });
   </script>
 </body>
 </html>
-
