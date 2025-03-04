@@ -8,42 +8,33 @@
 </head>
 <body>
   <header>
-    <h1>What People Say About SRPGuy</h1>
+    <h1>Testimonials</h1>
     <nav>
       <ul>
-        <li><a href="index.html"><span>Home</span></a></li>
-        <li><a href="testimonials.html"><span>Testimonials</span></a></li>
-        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section>
-      <h2>Testimonials</h2>
-      <blockquote>⭐⭐⭐⭐⭐ "Cheaper than a mcdonalds bigmac meal." – Harry R.</blockquote>
-      <blockquote>⭐⭐⭐⭐⭐ "Fast and reliable." – Liam G.</blockquote>
-      <blockquote>⭐⭐⭐⭐⭐ "Amazing service recommend buying" – Dylan G.</blockquote>
+      <h2>What Our Users Say</h2>
+      <blockquote>
+        ⭐⭐⭐⭐⭐ "Fast and reliable, highly recommend buying!" – Harry R.
+      </blockquote>
+      <blockquote>
+        ⭐⭐⭐⭐⭐ "Great support and tools that save so much time." – Liam G.
+      </blockquote>
+      <blockquote>
+        ⭐⭐⭐⭐ "The SPARX bot is a lifesaver. Will use again!" – Dylan G.
+      </blockquote>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 SRPGuy. Making homework easy for everyone.</p>
+    <p>&copy; 2025 SRPGuy. Join thousands of satisfied users today!</p>
   </footer>
-
-  <script>
-    document.querySelectorAll('nav ul li a span').forEach(link => {
-      link.addEventListener('mousemove', (e) => {
-        const rect = link.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        link.style.backgroundPosition = `${x}px ${y}px`;
-      });
-
-      link.addEventListener('mouseleave', () => {
-        link.style.backgroundPosition = 'center';
-      });
-    });
-  </script>
 </body>
 </html>
