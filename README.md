@@ -34,7 +34,8 @@ If you need support or have any questions, feel free to reach out:
 ---
 
 ## 📋 License
-This project is open for personal use and modification. Please give credit to SRPGuy when sharing or using publicly.
+All rights reserved. This item is the intellectual property of srpguy. No part of this item may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the copyright owner, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
+© 2025 SRPGuy | Revolutionizing Homework Solutions
 
 ---
 
