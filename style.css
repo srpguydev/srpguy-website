@@ -1,55 +1,44 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #1e1e2f; /* Dark, soft background */
+    background-color: #1e1e2f; /* Dark, smooth background */
     color: #dcdcdc; /* Light text for readability */
-}
-
-/* Header */
-header {
-    background-color: #29293d; /* Darker shade for header */
-    color: #ffffff; /* White text for contrast */
-    padding: 15px 20px;
     text-align: center;
-    border-bottom: 2px solid #444457; /* Subtle bottom border */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-nav a {
-    color: #a3a3ff; /* Soft blue for links */
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #ffffff; /* White on hover for contrast */
-    text-decoration: underline;
-}
-
-/* Main Content */
+/* Main Section */
 main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content {
+    background-color: #29293d; /* Slightly lighter background for content area */
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 400px;
     text-align: center;
 }
 
-section {
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners for a cozy feel */
-    background-color: #29293d; /* Slightly lighter than body */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+h1 {
+    color: #ffffff;
+    margin-bottom: 15px;
 }
 
-/* Buttons */
-.button {
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+a.button {
     display: inline-block;
     background-color: #4a4aed; /* Soft blue button */
     color: #ffffff;
@@ -57,36 +46,27 @@ section {
     padding: 12px 20px;
     border-radius: 5px;
     font-size: 1rem;
-    margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
+a.button:hover {
     background-color: #3737d1; /* Slightly darker blue on hover */
+}
+
+a {
+    color: #a3a3ff; /* Subtle blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
     background-color: #29293d;
     color: #dcdcdc;
-    text-align: center;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-top: 2px solid #444457; /* Subtle top border */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-    body {
-        font-size: 0.9rem;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .button {
-        font-size: 0.9rem;
-        padding: 10px 15px;
-    }
+    padding: 10px 0;
+    border-top: 2px solid #444457; /* Subtle border */
+    font-size: 0.9rem;
 }
