@@ -1,63 +1,92 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #1e1e2f; /* Dark, soft background */
+    color: #dcdcdc; /* Light text for readability */
 }
 
+/* Header */
 header {
-    background: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #29293d; /* Darker shade for header */
+    color: #ffffff; /* White text for contrast */
+    padding: 15px 20px;
     text-align: center;
+    border-bottom: 2px solid #444457; /* Subtle bottom border */
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 nav a {
-    color: #fff;
+    color: #a3a3ff; /* Soft blue for links */
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
 
 nav a:hover {
+    color: #ffffff; /* White on hover for contrast */
     text-decoration: underline;
 }
 
+/* Main Content */
 main {
     padding: 20px;
     text-align: center;
 }
 
 section {
-    margin-bottom: 20px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for a cozy feel */
+    background-color: #29293d; /* Slightly lighter than body */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
+/* Buttons */
 .button {
     display: inline-block;
-    background: #4CAF50;
-    color: #fff;
+    background-color: #4a4aed; /* Soft blue button */
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 5px;
+    font-size: 1rem;
     margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background: #45a049;
+    background-color: #3737d1; /* Slightly darker blue on hover */
 }
 
+/* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #29293d;
+    color: #dcdcdc;
     text-align: center;
     padding: 10px 20px;
     margin-top: 20px;
+    border-top: 2px solid #444457; /* Subtle top border */
 }
 
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
